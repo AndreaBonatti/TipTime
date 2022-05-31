@@ -138,7 +138,7 @@ fun EditNumberField(
         value = value,
         onValueChange = onValueChange,
         label = { Text(stringResource(id = label)) },
-        modifier = Modifier.fillMaxWidth(),
+        modifier = modifier.fillMaxWidth(),
         singleLine = true,
 //        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
 //        keyboardOptions = KeyboardOptions.Default.copy(
