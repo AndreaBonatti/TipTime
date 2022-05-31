@@ -24,7 +24,7 @@ class TipUITests {
         composeTestRule.onNodeWithText("Bill Amount").performTextInput("10")
         composeTestRule.onNodeWithText("Tip (%)").performTextInput("20")
 //        composeTestRule.onNodeWithText("Tip Amount: $2.00").assertExists()
-        val expectedResult: String = "Tip Amount: " +  NumberFormat.getCurrencyInstance().format(2.00)
+        val expectedResult: String = "Tip amount: " +  NumberFormat.getCurrencyInstance().format(2.00)
         composeTestRule.onNodeWithText(expectedResult).assertExists()
     }
 }
